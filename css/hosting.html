@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Tugas-13</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+</head>
+<body>
+    <div class="w3-container">
+        <img src="css/inoen.jpg" alt="genshinbanner" style="height: 50%;width: 100%;">
+    </div>
+
+    <div class="w3-bar w3-pink">
+        <button class="w3-bar-item w3-button" onclick="Menu('Anies')">Anies</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Prabowo')">Prabowo</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Ganjar')">Ganjar</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Jokowi')">Jokowi</button>
+    </div>
+
+    <div id="Anies" class="w3-container char w3-animate-fading" style="display: none;">
+        <h2>Anies</h2>
+        <img src="css/anies.jpeg" alt="Anies">
+    </div>
+
+    <div id="Prabowo" class="w3-container char w3-animate-bottom" style="display: none;">
+        <h2>Prabowo</h2>
+        <img src="css/prabowo.jpg" alt="Prabowo">
+    </div>
+
+    <div id="Ganjar" class="w3-container char w3-animate-top" style="display: none;">
+        <h2>Ganjar</h2>
+        <img src="css/ganjar.jpg" alt="Ganjar">
+    </div>
+
+    <div id="Jokowi" class="w3-container char w3-animate-zoom" style="display: none;">
+        <h2>Jokowi</h2>
+        <img src="css/jokowi.jpeg" alt="Jokowi">
+    </div>
+
+    <script>
+        function Menu(Karakter) {
+            var i;
+            var x = document.getElementsByClassName("char");
+            for (i = 0;i < x.length;i++){
+                x[i].style.display = "none";
+            }
+            document.getElementById(Karakter).style.display = "block";
+        }
+    </script>
+</body>
+</html>

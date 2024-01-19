@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Tugas-13</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+</head>
+<body>
+    <div class="w3-container">
+        <img src="css/loncat.jpg" alt="genshinbanner" style="height: 70%;width: 100%;">
+    </div>
+
+    <div class="w3-bar w3-red">
+        <button class="w3-bar-item w3-button" onclick="Menu('Profile')"><b>Profile</b></button>
+        <button class="w3-bar-item w3-button" onclick="Menu('PRAU')"><b>Gunung Prau</b></button>
+        <button class="w3-bar-item w3-button" onclick="Menu('SUMBING')"><b>Gunung Sumbing</b></button>
+        <button class="w3-bar-item w3-button" onclick="Menu('GEDE')"><b>Gunung Gede Pangrango</b></button>
+    </div>
+
+    <div id="Profile" class="w3-container char w3-round-xxlarge w3-black w3-animate-zoom" style="display: none;">
+        <center>
+        <h2><b>NAMA  : Abdul Rapli</h2></b>
+        <h2><b>NIM   : 10123058</h2></b>
+        <h2><b>PRODI : Teknik Informatika</h2></b>
+        <h2><b>HOBBY : Naik Gunung</h2></b>
+        </center>
+    </div>
+    <p>
+    <center>
+    <div id="PRAU" class="w3-container char w3-round-xxlarge w3-black w3-animate-zoom" style="height: 100%; width: 50%;">
+        <h2><b>Gunung Prau</b></h2>
+        <img src="css/prau.jpg" alt="PRAU" style="height: 80%; width: 50%;">
+    </div>
+    
+
+    <div id="SUMBING" class="w3-container char w3-round-xxlarge w3-black w3-animate-zoom" style="height: 100%; width: 50%;">
+        <h2><b>Gunung Sumbing</b></h2>
+        <img src="css/sumbing.jpg" alt="SUMBING" style="height: 80%; width: 50%;">
+    </div>
+
+    <div id="GEDE" class="w3-container char w3-round-xxlarge w3-black w3-animate-zoom" style="height: 100%; width: 50%;">
+        <h2><b>Gunung Gede Pangrango</b></h2>
+        <img src="css/gede.jpg" alt="GEDE" style="height: 85%; width: 100%;">
+
+    </center>
+    </p> 
+    </div>
+    
+
+    <script>
+        function Menu(Karakter) {
+            var i;
+            var x = document.getElementsByClassName("char");
+            for (i = 0;i < x.length;i++){
+                x[i].style.display = "none";
+            }
+            document.getElementById(Karakter).style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

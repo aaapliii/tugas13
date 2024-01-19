@@ -1,0 +1,188 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div class="w3-container">
+    <center>
+ <h1><p>Membuat Menu Navigasi</p></h1>
+    </center>
+
+</div>
+<div class="w3-bar w3-orange">
+    <button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Bandung</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Garut')">Garut</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Tasik')">Tasik</button>
+	
+
+   <div class="w3-dropdown-hover">
+    <button class="w3-button">Animasi</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="openKota('Top')">Top</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Bottom')">Bottom</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Latihan10')">Latihan10</button>
+       
+    </div>
+   </div>
+   
+   <div id="Top" class="w3-blue w3-container kota w3-animate-top" style="display:none">
+    <b><h2>KAKEK ZEUSSS</h2>
+    <hr>
+    <img src="zeus.jpg" >
+   </div>
+   
+
+   <div id="Latihan10" class="w3-blue w3-container w3-animate-top" style="display:none">
+    <html>
+	<!--- ini isi head --->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/w3.css">
+		
+		<title>Belajar Framework | Pemograman Web</title>
+		
+	</head>
+	
+	<!--- ini isi body --->
+	<body>
+	<!--- ini DISPLAY 
+		<div class="w3-display-container w3-text-white">
+		<img src="css/unikom-du.jpg" style="width:100%">
+		<div class="w3-display-topleft w3-padding">Top Left</div>
+		<div class="w3-display-topright w3-padding">Top Right</div>
+		<div class="w3-display-bottomleft w3-padding">Top Bottom left</div>
+		<div class="w3-display-bottomright w3-padding">Top Bottom Right</div>
+		<div class="w3-display-left w3-padding">Top left</div>
+		<div class="w3-display-right w3-padding">Top Bottom Right</div>
+		<div class="w3-display-middle w3-padding">Top Middle</div>
+		</div>
+	--->
+	
+		<!--- function ini buat manggil button di input --->
+		<script>
+			function hitung()
+			{
+				alert("HALO")
+			}
+			
+		</script>
+		
+		<form name=formpenjumlahan>
+		<script>
+			function penjumlahan()
+			{
+				var a=parseFloat(document.formpenjumlahan.a.value);
+				var b=parseFloat(document.formpenjumlahan.b.value);
+				var c=a*1 + b*1;
+				document.formpenjumlahan.c.value=c;
+			}
+			
+		</script>
+		
+		<form name=formpengurangan>
+		<script>
+			function pengurangan()
+			{
+				var a=document.formpengurangan.a.value;
+				var b=document.formpengurangan.b.value;
+				var c=a-b;
+				document.formpengurangan.c.value=c;
+			}
+			
+		</script>
+		
+		
+		<form name=formperkalian>
+		<script>
+			function perkalian()
+			{
+				var a=document.formperkalian.a.value;
+				var b=document.formperkalian.b.value;
+				var c=a*b;
+				document.formperkalian.c.value=c;
+			}
+			
+		</script>
+		
+		<!--- ini contoh contoh button --->
+		<input type="button" class="w3-button w3-red" value="Input Button" onclick="hitung()"> <!--- ini di panggil pake function  --->
+		<Button class="w3-button w3-indigo">Buttin Button </Button>
+		<a href="latihan9.html" class="w3-button w3-purple">Link Button</a>
+		
+		<div class="w3-panel w3-green">
+			<center>
+			<p><h1>PROGRAM KALKULATOR		
+		</div>
+		
+		<div class="w3-panel w3-blue w3-card4">
+			<center>
+			<p>
+			<table>
+				<tr><td>Input A  <td>:<input name=a>
+				<tr><td>Input B  <td>:<input name=b>
+				<tr><td>Output C  <td>:<input name=c>
+			</table>
+		</div>
+		
+		<div class="w3-panel w3-red w3-round-xxlarge">
+		<p>
+		<center>
+			<input type="button" class="w3-button w3-blue" value="+" onclick="penjumlahan()">
+			<input type="button" class="w3-button w3-blue" value="-" onclick="pengurangan()">
+			<input type="button" class="w3-button w3-blue" value="*" onclick="perkalian()">
+			<input type="button" class="w3-button w3-blue" value="%" onclick="pembagian()">
+			<input type="button" class="w3-button w3-blue" value="CLEAR" onclick="hitung()">
+		
+		</p>
+		</div>
+		
+	</body>
+</html>
+
+   </div>
+
+   <div id="Bandung" class="w3-container kota w3-animate-zoom" style="display:none">
+    <b><h2>Bandung</h2>
+    <p>Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.</p>
+   </div>
+   <div id="Garut" class="w3-container kota w3-animate-zoom" style="display:none">
+    <h2>Garut</h2>
+    <p>Dikenal dengan Julukan Kota Dodol, dan jaman juga dikenal dengan Jeruk Garut atau Domba
+   Garut</p>
+   </div>
+   <div id="Tasik" class="w3-container kota w3-animate-zoom" style="display:none">
+    <h2>Tasikmalaya</h2>
+    <p>Atau Tasikmalaya Dikenal dengan Julukan Kota Intan, dan Kota Kerajinan Tangan</p>
+   </b>
+   </div>
+   
+   <script>
+    function openKota(Bandung) {
+     var i;
+     var x = document.getElementsByClassName("Bandung");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+     }
+     document.getElementById(Bandung).style.display = "block";
+    }
+    </script>
+
+   <script>
+    function openKota(Garut) {
+     var i;
+     var x = document.getElementsByClassName("Garut");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+     }
+     document.getElementById(Garut).style.display = "block";
+    }
+    </script>
+
+   <script>
+    function openKota(Tasik) {
+     var i;
+     var x = document.getElementsByClassName("Tasik");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+     }
+     document.getElementById(Tasik).style.display = "block";
+    }
+    </script>
